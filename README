@@ -10,8 +10,6 @@ To use Drift you'll need to add drift to your Leiningen project. Simply add the 
 
 [drift "1.1.0"]
 
-Note: Currently Drift is not on Clojars. You will need to clone drift and install it locally for the above to work.
-
 To set your Drift migration directory, simply add a clojure file called "migrate_config.clj" to the directory
 "src/config".
 
