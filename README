@@ -21,8 +21,8 @@ Your migrate_config.clj file should look something like:
 
  (defn migrate-config []
    { :directory "/test/migrations"
-     :current-db-version current-db-version-fn
-     :update-db-version update-db-version-fn })
+     :current-version current-db-version-fn
+     :update-version update-db-version-fn })
 
 Current-db-version-fn and update-db-version-fn are both function which you must implement to let Drift read and set the
 current db version.
@@ -47,8 +47,8 @@ For example, here is an in memory db version (Note, you do not want to do this):
  
  (defn migrate-config []
    { :directory "/test/migrations"
-     :current-db-version memory-current-db-version
-     :update-db-version memory-update-db-version })
+     :current-version memory-current-db-version
+     :update-version memory-update-db-version })
 
 
 Using a table named "schema_migrations" that has one version column with a single value holding the current database version:
@@ -75,4 +75,4 @@ $ lein migrate
 
 ## License
 
-Copyright © 2009 Matthew Courtney and released under the Apache 2.0 license.
+Copyright ï¿½ 2009 Matthew Courtney and released under the Apache 2.0 license.
