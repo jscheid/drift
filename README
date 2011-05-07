@@ -8,7 +8,7 @@ appropriate.
 
 To use Drift you'll need to add drift to your Leiningen project. Simply add the following to your project.clj file:
 
-[drift "1.0.0-SNAPSHOT"]
+[drift "1.1.0"]
 
 Note: Currently Drift is not on Clojars. You will need to clone drift and install it locally for the above to work.
 
